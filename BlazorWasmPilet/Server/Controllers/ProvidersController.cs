@@ -4,11 +4,11 @@ namespace BlazorWasmPilet.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class HealthCareProviderController: ControllerBase
+    public class ProvidersController: ControllerBase
     {
         private readonly IHealthCareProviderRepository healthCareProviderRepository;
 
-        public HealthCareProviderController(IHealthCareProviderRepository healthCareProviderRepository)
+        public ProvidersController(IHealthCareProviderRepository healthCareProviderRepository)
         {
             this.healthCareProviderRepository = healthCareProviderRepository;
         }

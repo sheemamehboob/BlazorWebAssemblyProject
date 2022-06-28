@@ -25,7 +25,7 @@ namespace BlazorWasmPilet.Client.Services
 
         public async Task<IEnumerable<HealthCareProvider>> GetAllHealthCareProvidersAsync()
         {
-            return await httpClient.GetFromJsonAsync<IEnumerable<HealthCareProvider>>("/api/providers");
+            return await httpClient.GetFromJsonAsync<IEnumerable<HealthCareProvider>>("/api/healthcareprovider");
         }
 
         public Task<HealthCareProvider> GetHealthCareProvider(int healthCareProviderId)
